@@ -7,6 +7,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     description = models.TextField()
     image = CloudinaryField('image')  # Cloudinary orqali yuklanadi
+    order_link = models.URLField()  # YANGI: Buyurtma berish havolasi
 
     def __str__(self):
         return self.title
