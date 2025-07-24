@@ -13,6 +13,7 @@ from adminContact.views import get_admin_contact
 from case_create.views import CaseLinkAPIView
 from bts.views import get_tracking_link
 from live.views import LiveLinkView
+from second_webapp.views import ProductListAPIView
 router = DefaultRouter()
 
 # product urls
@@ -46,4 +47,5 @@ urlpatterns = [
     path('case/link/', CaseLinkAPIView.as_view(), name='case-link'),
     path('get-tracking-link/', get_tracking_link, name='get-tracking-link'),
     path('live/', LiveLinkView.as_view(), name='live-link'),
+    path('productlist/', ProductListAPIView.as_view(), name='product-list'),
 ]

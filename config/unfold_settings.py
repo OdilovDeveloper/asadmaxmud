@@ -91,6 +91,11 @@ UNFOLD = {
                         "link": reverse_lazy("admin:product_productmodel_changelist"),
                     },
                     {
+                        "title": _("2 - webApp mahsulot"),
+                        "icon": "inventory", 
+                        "link": reverse_lazy("admin:second_webapp_product_changelist"),
+                    },
+                    {
                         "title": _("Kategoryalar"),
                         "icon": "category",  
                         "link": reverse_lazy("admin:product_categorymodel_changelist"),

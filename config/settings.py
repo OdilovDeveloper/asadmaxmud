@@ -77,6 +77,7 @@ INSTALLED_APPS = [
     'sendSms',
     'bts',
     'live',
+    'second_webapp',
 ]
 
 
@@ -155,7 +156,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 DATABASES = {
     'default': dj_database_url.parse(
-        "postgresql://posrgres_db_40hh_user:F001pmuBWvm2N7RXxR7LRnPXhhlAsCaI@dpg-d1tg5cidbo4c73diekj0-a.oregon-postgres.render.com/posrgres_db_40hh", 
+        "postgresql://posrgres_db_x6qu_user:LHLDrIPqsYezPYc10OhbDFtcCzh1gG5G@dpg-d20st6ripnbc73dljolg-a.oregon-postgres.render.com/posrgres_db_x6qu", 
         conn_max_age=600, 
         ssl_require=True
     )
